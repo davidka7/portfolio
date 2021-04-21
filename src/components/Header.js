@@ -1,8 +1,8 @@
 import "../App.css";
 function Header() {
   return (
-    <div>
-      <ul className="third-header">Open</ul>
+    <div className="fixed">
+      <ul className="third-header">☰lol</ul>
       <ul className="first-header">
         <div> David Perekopskiy</div> <div>FullStack SE</div>
       </ul>
@@ -23,7 +23,12 @@ function Header() {
           <a href="#goals">Goals</a>
         </li>
         <li>
-          <a href="#resume">Resume</a>
+          <a
+            href="https://drive.google.com/file/d/1QwjBCBL4yiXPuR3JeUeVbqeaLGG6m8R5/view?usp=sharing"
+            target="_blank"
+          >
+            Resume
+          </a>
         </li>
       </ul>
     </div>
