@@ -1,6 +1,7 @@
 
+
 @media only screen and (min-device-width: 737px)  {.App {
-  background-color:antiquewhite;
+  background-color:rgb(45, 45, 45);
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
@@ -14,10 +15,20 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-}
 
+.hidden{
+  display:none;
+}}
+
+.cover {
+  background-color:rgb(19, 19, 19);
+  color:white;
+  width:100%;
+  
+  
+}
   @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {.App {
-    background-color:antiquewhite;
+    background-color:rgb(45, 45, 45);
     background-size: cover;
     background-attachment: scroll;
   background-repeat: no-repeat;
@@ -27,9 +38,12 @@
  
   overflow-x: hidden;
   overflow-y: auto;
+  }
+  .opened{
+    display:none;
   }}
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {.App {
-  background-color:antiquewhite;
+  background-color:rgb(45, 45, 45);
   background-size: cover;
   background-attachment: scroll;
 background-repeat: no-repeat;
@@ -39,9 +53,12 @@ background-position: center center;
  
 overflow-x: hidden;
 overflow-y: auto;
+}
+.opened{
+  display:none;
 }}
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {.App {
-  background-color:antiquewhite;
+  background-color:rgb(45, 45, 45);
   background-size: cover;
   background-attachment: scroll;
 background-repeat: no-repeat;
@@ -51,9 +68,12 @@ background-position: center center;
  
 overflow-x: hidden;
 overflow-y: auto;
+}
+.opened{
+  display:none;
 }}
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {.App {
-  background-color:antiquewhite;
+  background-color:rgb(45, 45, 45);
   background-size: cover;
   background-attachment: scroll;
 background-repeat: no-repeat;
@@ -63,9 +83,12 @@ background-position: center center;
  
 overflow-x: hidden;
 overflow-y: auto;
+}
+.opened{
+  display:none;
 }}
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {.App {
-  background-color:antiquewhite;
+  background-color:rgb(45, 45, 45);
   background-size: cover;
   background-attachment: scroll;
 background-repeat: no-repeat;
@@ -76,9 +99,12 @@ background-position: center center;
 overflow-x: hidden;
 overflow-y: auto;
 
+}
+.opened{
+  display:none;
 }}
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {.App {
-  background-color:antiquewhite;
+  background-color:rgb(45, 45, 45);
   background-size: cover;
   background-attachment: scroll;
 background-repeat: no-repeat;
@@ -88,9 +114,12 @@ background-position: center center;
 height: 100vh;
 overflow-x: hidden;
 overflow-y: auto;
-;}}
+;}
+.opened{
+  display:none;
+}}
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {.App {
-  background-color:antiquewhite;
+  background-color:rgb(45, 45, 45);
   background-size: cover;
   background-attachment: scroll;
 background-repeat: no-repeat;
@@ -102,9 +131,12 @@ overflow-x: hidden;
 
  
 overflow-y: auto;
+}
+.opened{
+  display:none;
 }}
 @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) {.App {
-  background-color:antiquewhite;
+  background-color:rgb(45, 45, 45);
   background-size: cover;
   background-attachment: scroll;
 background-repeat: no-repeat;
@@ -114,12 +146,23 @@ background-position: center center;
  
 overflow-x: hidden;
 overflow-y: auto;
+}
+
+.opened{
+  display:none;
 }}
 nav
 {
   float:right;
   width:80%;
   flex-grow: 1;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-left:10vw;
+  padding-right:10vw
 }
 nav ul {
 margin:0;
@@ -129,7 +172,15 @@ display:flex;
 justify-content: space-around;
 
 }
-
+.software{ color: rgb(210, 209, 209);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 2.5vw, 3rem);
+ }
+header {width: 100%;
+  position: fixed;
+  display: flex;
+  top: 0;}
 nav li {
 display:inline-block;
 
@@ -137,7 +188,7 @@ padding-top:clamp(3rem, 2.5vw, 20rem);
 
 }
 nav a {
-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);
 text-decoration: none;
 text-transform: uppercase;
 font-size: clamp(1rem, 1.5vw, 3rem); 
@@ -167,9 +218,66 @@ nav a::before  {
   width: 0%;
   transition: all ease-in-out 250ms;
 }
+#myNav {width:0%
+
+
+}
+#myNav1 {width:100%
+
+
+}
 .spanner {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   text-transform: uppercase;
   font-size: clamp(1rem, 1.5vw, 3rem);cursor:pointer
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
