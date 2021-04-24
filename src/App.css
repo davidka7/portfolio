@@ -1,97 +1,175 @@
-.App {
-  text-align: center;
- display: flex;
-    flex-direction: row;
-    
-    height:100%;
-    
+
+@media only screen and (min-device-width: 737px)  {.App {
+  background-color:antiquewhite;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-size:100% 100%; */
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
-.first-header {
-  list-style-type: none;
-  font-size:2.2vw;
-  margin: 0;
-  padding: 0;
-  width: 300px;
-  height:15%;
-  background-color: #a0a0a0;
 }
 
-.second-header {
-  list-style-type: none;
-  font-size:2vw;
-  margin: 0;
-  padding: 0;
-  width: 300px;
- height:100%;
-  background-color: #cbcbcb;
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {.App {
+    background-color:antiquewhite;
+    background-size: cover;
+    background-attachment: scroll;
+  background-repeat: no-repeat;
+  perspective: 1px;
+  height: 100vh;
+  background-position: center center;
+ 
+  overflow-x: hidden;
+  overflow-y: auto;
+  }}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {.App {
+  background-color:antiquewhite;
+  background-size: cover;
+  background-attachment: scroll;
+background-repeat: no-repeat;
+perspective: 1px;
+height: 100vh;
+background-position: center center;
+ 
+overflow-x: hidden;
+overflow-y: auto;
+}}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {.App {
+  background-color:antiquewhite;
+  background-size: cover;
+  background-attachment: scroll;
+background-repeat: no-repeat;
+perspective: 1px;
+height: 100vh;
+background-position: center center;
+ 
+overflow-x: hidden;
+overflow-y: auto;
+}}
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {.App {
+  background-color:antiquewhite;
+  background-size: cover;
+  background-attachment: scroll;
+background-repeat: no-repeat;
+perspective: 1px;
+height: 100vh;
+background-position: center center;
+ 
+overflow-x: hidden;
+overflow-y: auto;
+}}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : portrait) {.App {
+  background-color:antiquewhite;
+  background-size: cover;
+  background-attachment: scroll;
+background-repeat: no-repeat;
+perspective: 1px;
+height: 100vh;
+background-position: center center;
+ 
+overflow-x: hidden;
+overflow-y: auto;
+
+}}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation : landscape) {.App {
+  background-color:antiquewhite;
+  background-size: cover;
+  background-attachment: scroll;
+background-repeat: no-repeat;
+perspective: 1px;
+background-position: center center;
+ 
+height: 100vh;
+overflow-x: hidden;
+overflow-y: auto;
+;}}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : portrait) {.App {
+  background-color:antiquewhite;
+  background-size: cover;
+  background-attachment: scroll;
+background-repeat: no-repeat;
+perspective: 1px;
+height: 100vh;
+background-position: center center;
+ 
+overflow-x: hidden;
+
+ 
+overflow-y: auto;
+}}
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation : landscape) {.App {
+  background-color:antiquewhite;
+  background-size: cover;
+  background-attachment: scroll;
+background-repeat: no-repeat;
+perspective: 1px;
+height: 100vh;
+background-position: center center;
+ 
+overflow-x: hidden;
+overflow-y: auto;
+}}
+nav
+{
+  float:right;
+  width:80%;
+  flex-grow: 1;
+}
+nav ul {
+margin:0;
+padding:0;
+position:center center;
+display:flex;
+justify-content: space-around;
+
 }
 
-li a {
+nav li {
+display:inline-block;
+
+padding-top:clamp(3rem, 2.5vw, 20rem);
+
+}
+nav a {
+color: rgb(0, 0, 0);
+text-decoration: none;
+text-transform: uppercase;
+font-size: clamp(1rem, 1.5vw, 3rem); 
+
+
+}
+a{text-decoration: none;
+  text-transform: uppercase;
+  font-size: clamp(1rem, 1.5vw, 3rem); 
+  
+  }
+nav a:hover {
+  color: rgb(119, 132, 143)
+}
+ul {
+  list-style-type: none;
+  text-align:center
+}
+nav a::before  {
+
+  content: '';
   display: block;
-  color: #000;
-  padding: 8px 16px;
+  height: 1.2vw;
+  background-color: rgb(119, 132, 143);
+  position: absolute;
+  top:0;
+  width: 0%;
+  transition: all ease-in-out 250ms;
+}
+.spanner {
+  color: rgb(0, 0, 0);
   text-decoration: none;
-}
-
-li a.active {
-  background-color: #b1b1b1;
-  color: white;
-}
-
-li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-.right{ background-color: #4CAF50;
-  font-size: 90px;
-  flex-basis:   0;
-
-}
-
-.stretch{
-
-  flex-grow:1 ;
-
-}
-
-.third-header {
-
-  display:none
-}
-/* On screens that are 1300px wide or less, the background color is blue */
-@media screen and (max-width: 1300px) {
-  .first-header {
-   
-    display:none
-  }
-  .second-header {
-
-    display:none
-  }
-  .third-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 4%;
-    height: 100%;
-   font-size:60px;
-    display:inline-block;
-    color:white;
-  }
-}
-
-.right-stretch{
-  font-size:60px;
-color:white;
-width:100%;
-height:100%;
-  background-color:rgb(0, 0, 0)
-}
-
-
-.fixed {
-  position: fixed;
-height: 100%;
-
+  text-transform: uppercase;
+  font-size: clamp(1rem, 1.5vw, 3rem);cursor:pointer
 }

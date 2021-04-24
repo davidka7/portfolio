@@ -1,37 +1,46 @@
 import "../App.css";
 function Header() {
   return (
-    <div className="fixed">
-      <ul className="third-header">☰lol</ul>
-      <ul className="first-header">
-        <div> David Perekopskiy</div> <div>FullStack SE</div>
-      </ul>
-      <ul className="second-header">
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#hobbies">Hobbies</a>
-        </li>
-        <li>
-          <a href="#projects">Projects</a>
-        </li>
-        <li>
-          <a href="#achievments">Achievments</a>
-        </li>
-        <li>
-          <a href="#goals">Goals</a>
-        </li>
-        <li>
-          <a
-            href="https://drive.google.com/file/d/1QwjBCBL4yiXPuR3JeUeVbqeaLGG6m8R5/view?usp=sharing"
-            target="_blank"
-          >
-            Resume
-          </a>
-        </li>
-      </ul>
-    </div>
+    <header>
+      <nav>
+        {" "}
+        <ul>
+          {/* {location.pathname === "/home" ? ( */}
+          <li>
+            <a onClick={abouter}>About </a>
+          </li>
+          {/* ) : (
+          <div></div>
+        )} */}
+          {/* {location.pathname === "/home" ? ( */}
+          <li>
+            <a onClick={servicer}>Service</a>
+          </li>
+          {/* ) : (
+          <div></div>
+        )} */}
+          {/* {location.pathname === "/home" ? ( */}
+          <li>
+            <a onClick={sermoner}>Sermons</a>
+          </li>
+          {/* ) : (
+          <div></div>
+        )} */}
+
+          {/* <li>
+          <span className="spanner" onClick={openNav}>
+            &#9776; open
+          </span>
+        </li> */}
+        </ul>
+        {/* <div id={`${myNav}`} className="overlay">
+        <a className="closebtn" onClick={closeNav}>
+          &times;
+        </a>
+   
+      </div> */}
+      </nav>
+    </header>
   );
 }
 export default Header;
