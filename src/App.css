@@ -159,10 +159,23 @@ nav
 }
 .flex {
   background-color: rgb(126, 126, 126);
-  display: flex;
+  color:white;
+  text-align: left;
+  font-size: 4vw;
+  /* display: flex;
   
-  justify-content: space-around;
-  text-align: center;
+  justify-content: space-around; */
+  padding-top:1vw;
+  padding-bottom:1vw;
+  padding-left:10vw;
+  padding-right:10vw
+}
+.flexx {
+  color:black;
+  /* display: flex;
+  
+  justify-content: space-around; */
+  text-align: left;
   padding-left:10vw;
   padding-right:10vw
 }
@@ -211,13 +224,16 @@ nav li {
 display:inline-block;
 -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
+  
 padding-top:clamp(3rem, 2.5vw, 20rem);
 
 }
+img{background-color:white;}
 nav a {
 color: rgb(0, 0, 0);
 text-decoration: none;
 text-transform: uppercase;
+
 font-size: clamp(1rem, 1.5vw, 3rem); 
 /* background-color: rgb(234, 234, 234); */
 
