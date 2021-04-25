@@ -1,5 +1,7 @@
 import "../App.css";
-
+import git from "./tabs/git.png";
+import link from "./tabs/link.png";
+import mail from "./tabs/mail.png";
 function List() {
   return (
     <div className="cover">
