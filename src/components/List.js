@@ -2,6 +2,8 @@ import "../App.css";
 import git from "./tabs/git.png";
 import link from "./tabs/link.png";
 import mail from "./tabs/mail.png";
+import is from "./group/is.png";
+import camp from "./group/camp.jpg";
 function List() {
   return (
     <div className="cover">
@@ -49,7 +51,33 @@ function List() {
       <div className="flex">
         <div id="hobbies">Hobbies</div>
       </div>{" "}
-      <div className="flexx">lol</div>
+      <div className="flexxx">
+        <div class="card">
+          <img src={camp} alt="Avatar" style={{ width: "100%" }} />
+          <div class="container">
+            <h4>
+              <b>i68 Post</b>
+            </h4>
+            <p>
+              At a local church, in charge of the media team, working with
+              camera, video design, and other media, as well as teaching other
+              people. hands on experience with tech
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src={is} alt="Avatar" style={{ width: "100%" }} />
+          <div class="container">
+            <h4>
+              <b>Kids Camp</b>
+            </h4>
+            <p>
+              Serve as a leader for youth and kids camps in the summer.
+              Participate in Teen gatherings, and other events
+            </p>
+          </div>
+        </div>
+      </div>
       <div className="flex">
         <div id="projects">Projects</div>
       </div>
@@ -61,7 +89,31 @@ function List() {
       <div className="flex">
         <div id="contact">contact</div>
       </div>{" "}
-      <div className="flexx">lol</div>
+      <br />
+      <a
+        href="https://drive.google.com/file/d/1QwjBCBL4yiXPuR3JeUeVbqeaLGG6m8R5/view?usp=sharing"
+        target="_blank"
+        className="radi"
+      >
+        {" "}
+        <img className="radi1" src={mail} alt="mail" />
+        &nbsp; Mail
+      </a>
+      <a href="https://github.com/davidka7" target="_blank" className="radi">
+        {" "}
+        <img className="radi1" src={git} alt="github" />
+        &nbsp; Github
+      </a>
+      <a
+        href="https://www.linkedin.com/in/david-perekopskiy-1694971a0/"
+        target="_blank"
+        className="radi"
+      >
+        {" "}
+        <img className="radi1" src={link} alt="linkedin" />
+        &nbsp; Linkedin
+      </a>
+      <br /> <br />
     </div>
   );
 }
