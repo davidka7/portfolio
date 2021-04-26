@@ -85,7 +85,8 @@ function List() {
       <div className="flex">
         <div id="experience">experience</div>
       </div>{" "}
-      <div className="flexx">lol</div>
+      <div className="exp"></div>
+      <br />
       <div className="flex">
         <div id="contact">contact</div>
       </div>{" "}

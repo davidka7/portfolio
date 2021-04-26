@@ -180,7 +180,7 @@ nav
   padding-right:10vw
 }
 .flexxx {
-  color:black;
+  color:rgb(107, 78, 78);
  display: flex;
   
   justify-content: space-around; 
@@ -199,6 +199,18 @@ nav
 
   color:rgb(255, 255, 255);
   background-image: url("lapto.jpg");
+  display: flex;
+  background-size: cover;
+
+  padding-left:10vw;
+  padding-right:10vw
+}
+.exp{
+  height: 100vh;
+  font-size:5vw;
+
+  color:rgb(255, 255, 255);
+  background-image: url("margaret!.png");
   display: flex;
   background-size: cover;
 
