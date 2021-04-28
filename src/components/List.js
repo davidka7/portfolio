@@ -4,6 +4,8 @@ import link from "./tabs/link.png";
 import mail from "./tabs/mail.png";
 import is from "./group/is.png";
 import camp from "./group/camp.jpg";
+import i68 from "../i68.gif";
+import planny from "../planny.gif";
 function List() {
   return (
     <div className="cover">
@@ -81,7 +83,36 @@ function List() {
       <div className="flex">
         <div id="projects">Projects</div>
       </div>
-      <div className="flexx">lol</div>
+      <div className="flexx">
+        <div class="cards">
+          <img
+            src={planny}
+            alt="Avatar"
+            className="projects"
+            // style="width:100%"
+          />
+          <div class="containers">
+            <h4>
+              <b>Planny Boat</b>
+            </h4>
+            <p>Minni Trello Version</p>
+          </div>
+        </div>
+        <div class="cards">
+          <img
+            src={i68}
+            alt="Avatar"
+            // style="width:100%"
+            className="projects"
+          />
+          <div class="containers">
+            <h4>
+              <b>i68 youth</b>
+            </h4>
+            <p>Website im building for a church</p>
+          </div>
+        </div>
+      </div>
       <div className="flex">
         <div id="experience">experience</div>
       </div>{" "}
