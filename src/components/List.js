@@ -118,11 +118,11 @@ function List() {
       </div>
       <br />
       <div className="flex">
-        <div id="experience">experience</div>
+        <div id="experience">Experience</div>
       </div>{" "}
       <div className="exp"></div>
       <div className="flex">
-        <div id="contact">contact</div>
+        <div id="contact">Contact</div>
       </div>{" "}
       <br />
       <a
