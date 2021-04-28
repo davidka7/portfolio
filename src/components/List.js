@@ -53,6 +53,7 @@ function List() {
       <div className="flex">
         <div id="hobbies">Hobbies</div>
       </div>{" "}
+      <br />
       <div className="flexxx">
         <div class="card">
           <img src={camp} alt="Avatar" style={{ width: "100%" }} />
@@ -80,10 +81,12 @@ function List() {
           </div>
         </div>
       </div>
+      <br />
       <div className="flex">
         <div id="projects">Projects</div>
       </div>
-      <div className="flexx">
+      <br />
+      <div className="flexxx">
         <div class="cards">
           <img
             src={planny}
@@ -113,6 +116,7 @@ function List() {
           </div>
         </div>
       </div>
+      <br />
       <div className="flex">
         <div id="experience">experience</div>
       </div>{" "}
