@@ -21,9 +21,11 @@ function List() {
           <div className="back">LOVE IT</div>
         </div>
       </div>
-      <div className="flex">About</div>{" "}
+      <div id="awesome" className="flex">
+        About
+      </div>{" "}
       <div className="flexx">
-        <div id="awesome">
+        <div>
           <br />
           While in school, I spent time building my coding abilities, starting
           from ruby on rails and working on React javascript, I came to be able
@@ -51,7 +53,7 @@ function List() {
         <br />
       </div>
       <div className="flex">
-        <div id="hobbies">Hobbies</div>
+        <div id="hobbies">Personal Projects</div>
       </div>{" "}
       <br />
       <div className="flexxx">
@@ -83,7 +85,7 @@ function List() {
       </div>
       <br />
       <div className="flex">
-        <div id="projects">Projects</div>
+        <div id="projects">Professional Projects</div>
       </div>
       <br />
       <div className="flexxx">

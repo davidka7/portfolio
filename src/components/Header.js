@@ -36,43 +36,40 @@ function Header() {
         {" "}
         <ul>
           <li>
-            <div className="software">
-              David <br />
-              Perekopskiy
-            </div>
+            <a className="remove">David Perekopskiy</a>
           </li>
 
           <li>
             <a onClick={abouter}>
               {" "}
-              <img src={person} alt="" />
+              <img className="reduce" src={person} alt="" />
               About{" "}
             </a>
           </li>
 
           <li>
             <a onClick={servicer}>
-              <img src={hobbies} alt="" />
+              <img className="reduce" src={hobbies} alt="" />
               Hobbies
             </a>
           </li>
 
           <li>
             <a onClick={sermoner}>
-              <img src={projects} alt="" />
+              <img className="reduce" src={projects} alt="" />
               Projects
             </a>
           </li>
           <li>
             <a onClick={experience}>
-              <img src={experiences} alt="" />
+              <img className="reduce" src={experiences} alt="" />
               Experience
             </a>
           </li>
 
           <li>
             <a onClick={contact}>
-              <img src={contacts} alt="" />
+              <img className="reduce" src={contacts} alt="" />
               Contact
             </a>
           </li>
@@ -81,7 +78,7 @@ function Header() {
               href="https://drive.google.com/file/d/1QwjBCBL4yiXPuR3JeUeVbqeaLGG6m8R5/view?usp=sharing"
               target="_blank"
             >
-              <img src={resumes} alt="" />
+              <img className="reduce" src={resumes} alt="" />
               Resume
             </a>
           </li>
@@ -91,13 +88,10 @@ function Header() {
         {" "}
         <ul>
           <li>
-            <div className="software">
-              David <br />
-              Perekopskiy
-            </div>
+            <div className="fonty remove">David Perekopskiy</div>
           </li>
           <li>
-            <span className="spanner" onClick={openNav}>
+            <span className="fonty spanner" onClick={openNav}>
               &#9776; Menu
             </span>
           </li>
@@ -120,38 +114,22 @@ function Header() {
             </li>
 
             <li>
-              <a onClick={abouter}>
-                {" "}
-                <img src={person} alt="" />
-                About{" "}
-              </a>
+              <a onClick={abouter}> About </a>
             </li>
 
             <li>
-              <a onClick={servicer}>
-                <img src={hobbies} alt="" />
-                Hobbies
-              </a>
+              <a onClick={servicer}>Hobbies</a>
             </li>
 
             <li>
-              <a onClick={sermoner}>
-                <img src={projects} alt="" />
-                Projects
-              </a>
+              <a onClick={sermoner}>Projects</a>
             </li>
             <li>
-              <a onClick={experience}>
-                <img src={experiences} alt="" />
-                Experience
-              </a>
+              <a onClick={experience}>Experience</a>
             </li>
 
             <li>
-              <a onClick={contact}>
-                <img src={contacts} alt="" />
-                Contact
-              </a>
+              <a onClick={contact}>Contact</a>
             </li>
             <li>
               <a
