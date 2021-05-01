@@ -1,4 +1,5 @@
 import "../App.css";
+import { useState } from "react";
 import git from "./tabs/git.png";
 import link from "./tabs/link.png";
 import mail from "./tabs/mail.png";
@@ -6,7 +7,19 @@ import is from "./group/is.png";
 import camp from "./group/camp.jpg";
 import i68 from "../i68.gif";
 import planny from "../planny.gif";
+import img1 from "./newimg/img1.png";
+import img2 from "./newimg/img2.png";
+import img3 from "./newimg/img3.png";
+import img4 from "./newimg/img4.png";
+import img5 from "./newimg/img5.png";
+import img6 from "./newimg/img6.png";
+import img7 from "./newimg/img7.png";
 function List() {
+  const [carousel, setCarousel] = useState(img1);
+
+  function changerCarousel(e) {
+    setCarousel(e.target.value);
+  }
   return (
     <div className="cover">
       <div className="laptop">
@@ -122,7 +135,45 @@ function List() {
       <div className="flex">
         <div id="experience">Experience</div>
       </div>{" "}
-      <div className="exp"></div>
+      <br />
+      <img src={carousel} className="exp1"></img>
+      <div className="dots">
+        <button
+          value="/portfolio/static/media/img1.ada559c5.png"
+          onClick={changerCarousel}
+          className="dot"
+        ></button>
+        <button
+          value="/portfolio/static/media/img2.94492b05.png"
+          onClick={changerCarousel}
+          className="dot"
+        ></button>
+        <button
+          value="/portfolio/static/media/img3.eff2d3e9.png"
+          onClick={changerCarousel}
+          className="dot"
+        ></button>
+        <button
+          value="/portfolio/static/media/img4.d76337df.png"
+          onClick={changerCarousel}
+          className="dot"
+        ></button>
+        <button
+          value="/portfolio/static/media/img5.f25b9459.png"
+          onClick={changerCarousel}
+          className="dot"
+        ></button>
+        <button
+          value="/portfolio/static/media/img6.ed766110.png"
+          onClick={changerCarousel}
+          className="dot"
+        ></button>
+        <button
+          value="/portfolio/static/media/img7.f791da2b.png"
+          onClick={changerCarousel}
+          className="dot"
+        ></button>
+      </div>
       <div className="flex">
         <div id="contact">Contact</div>
       </div>{" "}

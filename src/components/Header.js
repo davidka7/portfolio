@@ -30,8 +30,18 @@ function Header() {
   const closeNav = () => {
     setmyNav("myNav");
   };
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-20vh";
+    }
+    prevScrollpos = currentScrollPos;
+  };
   return (
-    <header>
+    <header id="navbar">
       <nav className="opened">
         {" "}
         <ul>
