@@ -9,12 +9,18 @@ import camp from "./group/camp.jpg";
 import i68 from "../i68.gif";
 import planny from "../planny.gif";
 import map from "../map.gif";
+
 import cap from "../cap.gif";
+import img1 from "./newimg/img1.png";
+import img2 from "./newimg/img2.png";
+import img3 from "./newimg/img3.png";
+import img4 from "./newimg/img4.png";
+import img5 from "./newimg/img5.png";
+import img6 from "./newimg/img6.png";
+import img7 from "./newimg/img7.png";
 function List() {
   const [carouselNum, setCarouselNum] = useState(1);
-  const [carousel, setCarousel] = useState(
-    "/portfolio/static/media/img1.ada559c5.png"
-  );
+  const [carousel, setCarousel] = useState(img1);
   function changerCarousel(e) {
     setCarousel(e.target.value);
     setCarouselNum(e.target.name);
@@ -173,43 +179,43 @@ function List() {
       <img src={carousel} className="exp1"></img>
       <div className="dots">
         <button
-          value="/portfolio/static/media/img1.ada559c5.png"
+          value={img1}
           onClick={changerCarousel}
           name={1}
           className={`dot A${carouselNum}`}
         ></button>
         <button
-          value="/portfolio/static/media/img2.94492b05.png"
+          value={img2}
           onClick={changerCarousel}
           className={`dot B${carouselNum}`}
           name={2}
         ></button>
         <button
-          value="/portfolio/static/media/img3.eff2d3e9.png"
+          value={img3}
           onClick={changerCarousel}
           className={`dot C${carouselNum}`}
           name={3}
         ></button>
         <button
-          value="/portfolio/static/media/img4.d76337df.png"
+          value={img4}
           onClick={changerCarousel}
           className={`dot D${carouselNum}`}
           name={4}
         ></button>
         <button
-          value="/portfolio/static/media/img5.f25b9459.png"
+          value={img5}
           onClick={changerCarousel}
           className={`dot E${carouselNum}`}
           name={5}
         ></button>
         <button
-          value="/portfolio/static/media/img6.ed766110.png"
+          value={img6}
           onClick={changerCarousel}
           className={`dot F${carouselNum}`}
           name={6}
         ></button>
         <button
-          value="/portfolio/static/media/img7.f791da2b.png"
+          value={img7}
           onClick={changerCarousel}
           className={`dot G${carouselNum}`}
           name={7}
