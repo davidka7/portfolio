@@ -1,5 +1,5 @@
 import "../App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import git from "./tabs/git.png";
 import link from "./tabs/link.png";
 import mail from "./tabs/mail.png";
@@ -19,8 +19,11 @@ import img5 from "./newimg/img5.png";
 import img6 from "./newimg/img6.png";
 import img7 from "./newimg/img7.png";
 function List() {
+  useEffect(() => {
+    setCarousel(img1);
+  }, []);
   const [carouselNum, setCarouselNum] = useState(1);
-  const [carousel, setCarousel] = useState(img1);
+  const [carousel, setCarousel] = useState("");
   function changerCarousel(e) {
     setCarousel(e.target.value);
     setCarouselNum(e.target.name);
