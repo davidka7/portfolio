@@ -4,21 +4,20 @@ import git from "./tabs/git.png";
 import link from "./tabs/link.png";
 import mail from "./tabs/mail.png";
 import is from "./group/is.png";
+import tennis from "./group/tennis.png";
 import camp from "./group/camp.jpg";
 import i68 from "../i68.gif";
 import planny from "../planny.gif";
-import img1 from "./newimg/img1.png";
-import img2 from "./newimg/img2.png";
-import img3 from "./newimg/img3.png";
-import img4 from "./newimg/img4.png";
-import img5 from "./newimg/img5.png";
-import img6 from "./newimg/img6.png";
-import img7 from "./newimg/img7.png";
+import map from "../map.gif";
+import cap from "../cap.gif";
 function List() {
-  const [carousel, setCarousel] = useState(img1);
-
+  const [carouselNum, setCarouselNum] = useState(1);
+  const [carousel, setCarousel] = useState(
+    "/portfolio/static/media/img1.ada559c5.png"
+  );
   function changerCarousel(e) {
     setCarousel(e.target.value);
+    setCarouselNum(e.target.name);
   }
   return (
     <div className="cover">
@@ -41,26 +40,16 @@ function List() {
         <div>
           <br />
           While in school, I spent time building my coding abilities, starting
-          from ruby on rails and working on React javascript, I came to be able
-          to adapt and grasp any language I put my mind to. I have worked on my
-          own time and at my current internship, with redux, hooks, typescript,
-          Mongo DB, writing JSON files, stripe, and other tools. I am focused
-          and diligent when managing workloads and prioritizing tasks to meet
-          deadlines. I thrive in environments where I am able to make a direct
-          impact, utilizing my abilities in complex problem-solving to find
-          solutions and achieve results. I also love to learn what I don't know.
-          As for my background, I grew up with a single mom, a strong woman, who
-          raised me well, but we had no English language(we are Russian), so it
-          was quite difficult for us at first. But I was fast to grasp the
-          English language and learned a lot. I loved building since childhood
-          and that's partially the reason I got into coding. I'm not sure about
-          the program I used but from day one when I was able to write some code
-          and see instant results, the step by step process of my code on the
-          console, I grew a passion for coding. My most valuable skills are my
-          desire to learn and adapt to new environments and my knowledge of the
-          Russian and Ukrainian language(if ever needed). I have a grasp in
-          different technologies and more is said about it and my internship on
-          my resume. <br />
+          from ruby on rails and onto React in javascript. I came to be able to
+          adapt and grasp any language I put my mind to. I have also worked on
+          my own time and at my current internship, with redux, hooks,
+          typescript, Mongo DB, writing JSON files, stripe, and other tools. I
+          am focused and diligent when managing workloads and prioritizing tasks
+          to meet deadlines. I thrive in environments where I am able to make a
+          direct impact, utilizing my abilities in complex problem-solving to
+          find solutions and achieve results.
+          <br /> I loved building since childhood and that's partially the
+          reason I got into coding. <br />
           Sincerely, david perekopskiy
         </div>
         <br />
@@ -71,20 +60,19 @@ function List() {
       <br />
       <div className="flexxx">
         <div class="card">
-          <img src={camp} alt="Avatar" style={{ width: "100%" }} />
+          <img src={is} alt="Avatar" style={{ width: "100%" }} />
           <div class="container">
             <h4>
               <b>i68 Post</b>
             </h4>
             <p>
               At a local church, in charge of the media team, working with
-              camera, video design, and other media, as well as teaching other
-              people. hands on experience with tech
+              camera, video design, other tech, as well as teaching people.
             </p>
           </div>
         </div>
         <div class="card">
-          <img src={is} alt="Avatar" style={{ width: "100%" }} />
+          <img src={camp} alt="Avatar" style={{ width: "100%" }} />
           <div class="container">
             <h4>
               <b>Kids Camp</b>
@@ -92,6 +80,18 @@ function List() {
             <p>
               Serve as a leader for youth and kids camps in the summer.
               Participate in Teen gatherings, and other events
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img src={tennis} alt="Avatar" style={{ width: "100%" }} />
+          <div class="container">
+            <h4>
+              <b>Personal Hobbies</b>
+            </h4>
+            <p>
+              I love building DIYs, traveling, hiking, playing every sport out
+              there, making music and meeting new people.
             </p>
           </div>
         </div>
@@ -103,12 +103,14 @@ function List() {
       <br />
       <div className="flexxx">
         <div class="cards">
-          <img
-            src={planny}
-            alt="Avatar"
-            className="projects"
-            // style="width:100%"
-          />
+          <a href="https://planyboat-knd.web.app/" target="_blank">
+            <img
+              src={planny}
+              alt="Avatar"
+              className="projects"
+              // style="width:100%"
+            />
+          </a>
           <div class="containers">
             <h4>
               <b>Planny Boat</b>
@@ -117,17 +119,49 @@ function List() {
           </div>
         </div>
         <div class="cards">
+          <a href="https://davidka7.github.io/i68youth/" target="_blank">
+            <img
+              src={i68}
+              alt="Avatar"
+              // style="width:100%"
+              className="projects"
+            />{" "}
+          </a>
+          <div class="containers">
+            <h4>
+              <b>i68 youth</b>
+            </h4>
+            <p>Website I am building for a church</p>
+          </div>
+        </div>
+        <div class="cards">
           <img
-            src={i68}
+            src={map}
             alt="Avatar"
             // style="width:100%"
             className="projects"
           />
           <div class="containers">
             <h4>
-              <b>i68 youth</b>
+              <b>Map Searcher</b>
             </h4>
-            <p>Website im building for a church</p>
+            <p>Reference a Saved Location with the Google maps api</p>
+          </div>
+        </div>
+        <div class="cards">
+          <a href="https://github.com/davidka7/Project-list" target="_blank">
+            <img
+              src={cap}
+              alt="Avatar"
+              // style="width:100%"
+              className="projects"
+            />
+          </a>
+          <div class="containers">
+            <h4>
+              <b>Other Projects</b>
+            </h4>
+            <p>Github Projects</p>
           </div>
         </div>
       </div>
@@ -141,37 +175,44 @@ function List() {
         <button
           value="/portfolio/static/media/img1.ada559c5.png"
           onClick={changerCarousel}
-          className="dot"
+          name={1}
+          className={`dot A${carouselNum}`}
         ></button>
         <button
           value="/portfolio/static/media/img2.94492b05.png"
           onClick={changerCarousel}
-          className="dot"
+          className={`dot B${carouselNum}`}
+          name={2}
         ></button>
         <button
           value="/portfolio/static/media/img3.eff2d3e9.png"
           onClick={changerCarousel}
-          className="dot"
+          className={`dot C${carouselNum}`}
+          name={3}
         ></button>
         <button
           value="/portfolio/static/media/img4.d76337df.png"
           onClick={changerCarousel}
-          className="dot"
+          className={`dot D${carouselNum}`}
+          name={4}
         ></button>
         <button
           value="/portfolio/static/media/img5.f25b9459.png"
           onClick={changerCarousel}
-          className="dot"
+          className={`dot E${carouselNum}`}
+          name={5}
         ></button>
         <button
           value="/portfolio/static/media/img6.ed766110.png"
           onClick={changerCarousel}
-          className="dot"
+          className={`dot F${carouselNum}`}
+          name={6}
         ></button>
         <button
           value="/portfolio/static/media/img7.f791da2b.png"
           onClick={changerCarousel}
-          className="dot"
+          className={`dot G${carouselNum}`}
+          name={7}
         ></button>
       </div>
       <div className="flex">
