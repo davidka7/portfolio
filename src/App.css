@@ -228,6 +228,28 @@ nav
   padding-left:10vw;
   padding-right:10vw
 }
+.lefta{
+  font-size:5vw;
+position:absolute;
+
+left:30vw;
+background-color: rgb(167, 167, 167);
+  color:rgb(255, 255, 255);
+width:5vw;
+top:13vw;
+}
+.righta{
+  font-size:5vw;
+background-color: rgb(167, 167, 167);
+  position:absolute;
+right:30vw;
+top:13vw;
+  color:rgb(255, 255, 255);
+width:5vw;
+
+
+  
+}
 .exp1{
  
   font-size:5vw;
@@ -242,9 +264,11 @@ width:30vw;
   display: flex;
   background-size: cover;
   float:center;
-
+position:relative
 }
-
+.positioner{
+  position:relative
+}
 nav ul {
 margin:0;
 padding:0;

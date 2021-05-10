@@ -12,6 +12,8 @@ import map from "../map.gif";
 
 import cap from "../cap.gif";
 import img1 from "./newimg/img1.png";
+import left from "./arrow/left.png";
+import right from "./arrow/right.png";
 import img2 from "./newimg/img2.png";
 import img3 from "./newimg/img3.png";
 import img4 from "./newimg/img4.png";
@@ -27,6 +29,48 @@ function List() {
   function changerCarousel(e) {
     setCarousel(e.target.value);
     setCarouselNum(e.target.name);
+  }
+  function changerMinus() {
+    if (carouselNum == 1) {
+    } else {
+      if (carouselNum - 1 == 1) {
+        setCarousel(img1);
+      } else if (carouselNum - 1 == 2) {
+        setCarousel(img2);
+      } else if (carouselNum - 1 == 3) {
+        setCarousel(img3);
+      } else if (carouselNum - 1 == 4) {
+        setCarousel(img4);
+      } else if (carouselNum - 1 == 5) {
+        setCarousel(img5);
+      } else if (carouselNum - 1 == 6) {
+        setCarousel(img6);
+      } else if (carouselNum - 1 == 7) {
+        setCarousel(img7);
+      }
+      setCarouselNum(carouselNum - 1);
+    }
+  }
+  function changerAdd() {
+    if (carouselNum == 7) {
+    } else {
+      if (carouselNum + 1 == 1) {
+        setCarousel(img1);
+      } else if (carouselNum + 1 == 2) {
+        setCarousel(img2);
+      } else if (carouselNum + 1 == 3) {
+        setCarousel(img3);
+      } else if (carouselNum + 1 == 4) {
+        setCarousel(img4);
+      } else if (carouselNum + 1 == 5) {
+        setCarousel(img5);
+      } else if (carouselNum + 1 == 6) {
+        setCarousel(img6);
+      } else if (carouselNum + 1 == 7) {
+        setCarousel(img7);
+      }
+      setCarouselNum(carouselNum + 1);
+    }
   }
   return (
     <div className="cover">
@@ -179,7 +223,12 @@ function List() {
         <div id="experience">Experience</div>
       </div>{" "}
       <br />
-      <img src={carousel} className="exp1"></img>
+      <div className="positioner">
+        <img src={carousel} className="exp1" />
+
+        <img onClick={changerMinus} src={left} className="lefta" />
+        <img onClick={changerAdd} src={right} className="righta" />
+      </div>
       <div className="dots">
         <button
           value={img1}
