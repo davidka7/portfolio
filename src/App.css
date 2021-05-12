@@ -182,7 +182,7 @@ nav
   background-color: rgb(126, 126, 126);
   color:white;
   text-align: left;
-  font-size: 3vw;
+  font-size: 5vw;
   /* display: flex;
   
   justify-content: space-around; */
@@ -196,19 +196,25 @@ nav
   /* display: flex;
   
   justify-content: space-around; */
+  flex-direction: row;
+  flex-wrap: wrap;
   text-align: left;
   padding-left:10vw;
   padding-right:10vw
 }
 
 .flexxx {
+  flex-direction: row;
+  flex-wrap: wrap;
   color:rgb(107, 78, 78);
  display: flex;
-  
+
   justify-content: space-around; 
   text-align: left;
   padding-left:15vw;
-  padding-right:15vw
+  padding-right:15vw;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .back{background-color:rgb(40, 40, 40);}
 .left{
@@ -426,7 +432,7 @@ nav a::before  {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 30%;
- 
+  min-width:200px;
 }
 
 .card:hover {
@@ -444,7 +450,8 @@ nav a::before  {
 .cards {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 23%;
+  width: 25%;
+  min-width:200px;
 }
 
 .cards:hover {

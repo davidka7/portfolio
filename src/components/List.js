@@ -187,7 +187,7 @@ function List() {
             <p>Website I am building for a church</p>
           </div>
         </div>
-        <br className="hidden" />
+        <br />
         <div class="cards">
           <img
             src={map}
