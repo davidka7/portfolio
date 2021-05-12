@@ -182,7 +182,7 @@ nav
   background-color: rgb(126, 126, 126);
   color:white;
   text-align: left;
-  font-size: 4vw;
+  font-size: 3vw;
   /* display: flex;
   
   justify-content: space-around; */
@@ -306,7 +306,7 @@ color: rgb(0, 0, 0);
 text-decoration: none;
 text-transform: uppercase;
 
-font-size: clamp(1rem, 1.5vw, 3rem); 
+font-size: clamp(.9rem, 1.3vw, 3rem); 
 /* background-color: rgb(234, 234, 234); */
 
 }
@@ -355,7 +355,7 @@ nav a::before  {
   color: rgb(40, 40, 40);
   text-decoration: none;
   text-transform: uppercase;
-  font-size: clamp(1rem, 1.5vw, 3rem);cursor:pointer
+  font-size: clamp(.9rem, 1.3vw, 3rem);cursor:pointer
 }
 
 @media screen and (max-height: 450px) {
@@ -414,12 +414,12 @@ nav a::before  {
   text-transform: uppercase;
   text-decoration: none;
   position:center center;
-  font-size: clamp(.9rem, 1.5vw, 3rem);
-  padding-left:10vw;
+  font-size: clamp(.6rem, 1.2vw, 2.7rem);
+  padding-left:8vw;
   color:black;
   padding-right:8vw
 }
-.radi1{border-radius: 13%;  float: left; background-color: rgb(171, 121, 90);}
+.radi1{border-radius: 19%;  float: left; background-color: rgb(171, 121, 90);}
 
 
 .card {
@@ -459,7 +459,7 @@ header{background-color: white;}
 
 .reduce{width:1.5vw}
 .fonty{
-  font-size: clamp(.7rem, 3.5vw, 3rem) ;
+  font-size: clamp(.5rem, 2.5vw, 2.9rem) ;
 }
 
 .dot {
