@@ -22,9 +22,9 @@ import img6 from "./newimg/img6.png";
 import img7 from "./newimg/img7.png";
 function List() {
   useEffect(() => {
-    setCarousel(img1);
+    setCarousel(img7);
   }, []);
-  const [carouselNum, setCarouselNum] = useState(1);
+  const [carouselNum, setCarouselNum] = useState(7);
   const [carousel, setCarousel] = useState("");
   function changerCarousel(e) {
     setCarousel(e.target.value);
@@ -187,7 +187,7 @@ function List() {
             <p>Website I am building for a church</p>
           </div>
         </div>
-        <br />
+
         <div class="cards">
           <img
             src={map}
@@ -278,29 +278,28 @@ function List() {
         <div id="contact">Contact</div>
       </div>{" "}
       <br />
-      <a
-        href="https://drive.google.com/file/d/1QwjBCBL4yiXPuR3JeUeVbqeaLGG6m8R5/view?usp=sharing"
-        target="_blank"
-        className="radi"
-      >
-        {" "}
-        <img className="radi1" src={mail} alt="mail" />
-        &nbsp; Mail
-      </a>
-      <a href="https://github.com/davidka7" target="_blank" className="radi">
-        {" "}
-        <img className="radi1" src={git} alt="github" />
-        &nbsp; Github
-      </a>
-      <a
-        href="https://www.linkedin.com/in/david-perekopskiy-1694971a0/"
-        target="_blank"
-        className="radi"
-      >
-        {" "}
-        <img className="radi1" src={link} alt="linkedin" />
-        &nbsp; Linkedin
-      </a>
+      <div className="spread">
+        <a
+          href="https://drive.google.com/file/d/1QwjBCBL4yiXPuR3JeUeVbqeaLGG6m8R5/view?usp=sharing"
+          target="_blank"
+          className="radi"
+        >
+          {" "}
+          <img className="radi1" src={mail} alt="mail" />
+        </a>
+        <a href="https://github.com/davidka7" target="_blank" className="radi">
+          {" "}
+          <img className="radi1" src={git} alt="github" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/david-perekopskiy-1694971a0/"
+          target="_blank"
+          className="radi"
+        >
+          {" "}
+          <img className="radi1" src={link} alt="linkedin" />
+        </a>
+      </div>
       <br /> <br />
     </div>
   );
