@@ -278,7 +278,8 @@ position:relative;
 
 }
 .positioner{
-  position:relative
+  position:relative;
+z-index: -1;
 }
 nav ul {
 margin:0;
