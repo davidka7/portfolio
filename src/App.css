@@ -179,12 +179,12 @@ nav
   flex-grow: 1;
 }
 .flex {
+  z-index: -1;
   background-color: rgb(126, 126, 126);
   color:white;
   text-align: left;
   font-size: 5vw;
   /* display: flex;
-  
   justify-content: space-around; */
   padding-top:1vw;
   padding-bottom:1vw;
