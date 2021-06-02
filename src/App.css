@@ -268,13 +268,14 @@ justify-content: center ;
   align-self:center;
   margin-left:35vw;
   margin-right:35vw;
-  color:rgb(255, 255, 255);
+  color:rgb(241, 232, 232);
 width:30vw;
   display: flex;
   background-size: cover;
   float:center;
 position:relative;
 /* z-index: -1; */
+
 
 }
 .positioner{
